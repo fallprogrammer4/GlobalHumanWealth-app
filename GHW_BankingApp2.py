@@ -10,14 +10,14 @@ print("Welcome to Global Human Wealth online banking")
 print("Select a number to choose an option, otherwise please enter info")
 
 # Signup page
-def signin():
+def signup():
     global name, pin, cb  # Use global variables
     name = input("Please create your username: ")
     pin = input("Please create your six-digit pin: ")
 
     if len(pin) != 6:
         print("Invalid! Pin must be six digits.")
-        signin()
+        signup()
     else:
         print("Sign up successful")
         print("Thanks for creating your account")
@@ -97,7 +97,7 @@ def login():
                 login()
         elif inp == 2:
             print("Create your account")
-            signin()
+            signup()
 
 # Main menu
 def mainmenu():
