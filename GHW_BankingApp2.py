@@ -103,7 +103,7 @@ def login():
 def mainmenu():
     optionone = int(input("Choose 1 to sign up and Choose 2 to log in: "))
     if optionone == 1:
-        signin()
+        signup()
     elif optionone == 2:
         login()  # Call the login function
     else:
